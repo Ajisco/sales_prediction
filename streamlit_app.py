@@ -13,7 +13,7 @@ with open('ada_boost_model.pkl', 'rb') as file:
 def user_input_features():
     fulfilment = st.selectbox('Fulfilment', ['Merchant', 'Amazon'])
     shipservicelevel = st.selectbox('Ship Service Level', ['Standard', 'Expedited'])
-    category = st.selectbox('Category', ['Western Dress', 'kurta', 'Set', 'Top', 'Blouse', 'Bottom', 'Ethnic Dress', 'Saree'])
+    category = st.selectbox('Clothing Product Category', ['Western Dress', 'kurta', 'Set', 'Top', 'Blouse', 'Bottom', 'Ethnic Dress', 'Saree'])
     size = st.selectbox('Size', ['3XL', 'L', 'XXL', 'S', 'XS', 'M', '5XL', 'XL', 'Free', '6XL', '4XL'])
     amount = st.number_input('Amount', min_value=0.0, value=500.0)  # Set a default value
     region = st.selectbox('Region', ['westindia', 'eastindia', 'centralindia', 'northindia', 'southindia', 'northeastindia'])
