@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pickle
 import pandas as pd
@@ -9,8 +8,6 @@ import pickle
 # Load the model
 with open('ada_boost_model.pkl', 'rb') as file:
     model = pickle.load(file)
-
-
 
 # Define function to get user input
 def user_input_features():
@@ -35,8 +32,8 @@ def user_input_features():
 
 # Title
 st.write("""
-# Product Service Prediction App
-This app predicts if a product will be rejected or not!
+# PRODUCT ORDER REJECTION MODEL INTERFACE
+This Streamlit application serves as an intuitive interface for an order rejection predictive model, specifically designed for e-commerce platforms such as Amazon. By seamlessly integrating real-time data analysis and predictive modeling, the app offers users the ability to input relevant order parameters and receive instant predictions on potential order cancellations 
 """)
 
 # User input features
